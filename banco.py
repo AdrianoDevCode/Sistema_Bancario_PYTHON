@@ -8,7 +8,7 @@ transacoes = []
 
 
 while True:
-    print("""
+    print('''
     Bem-vindo ao Banco!
     Opções disponíveis:
     -------------------
@@ -17,7 +17,7 @@ while True:
     |   2 - extrato   |
     |   3 - sair      |
     -------------------        
-    """)
+    ''')
 
     operação = input('Escolha uma opção: ')
     if operação not in ('0', '1', '2', '3'):
@@ -54,7 +54,7 @@ while True:
                 break
             else:
                 saldo += deposito
-                transacoes.append(f"Depósito: +R${deposito:.2f}")
+                transacoes.append(f'Depósito: +R${deposito:.2f}')
                 print(f'Depósito realizado com sucesso! Seu saldo atual é de R${saldo:.2f}.')
                 break
 
@@ -66,7 +66,7 @@ while True:
         
 
         if not transacoes:
-            print("Nenhuma movimentação realizada.")
+            print('Nenhuma movimentação realizada.')
         else:
             for t in transacoes:
                 print(t)    
